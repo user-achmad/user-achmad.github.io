@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Membuat Desain Form Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="index1.css" type="text/css">
+</head>
+<style>
+body{
+	background: #40E0D0;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.kotak_login{
+	width: 320px;
+	/* background: rgb(255,255,255,0.7); */
+	background: #CC95C0;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	margin: 100px auto;
+	padding: 30px 20px;
+}
+.tulisan_login{
+	text-align: center;
+  font-family: fantasy;
+	text-transform: uppercase;
+  padding-bottom: 20px;
+  font-size: 150%;
+}
+.ac {
+  font-family:serif;
+  text-decoration: none;
+  font-size: 15px;
+}
+.form_login{
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+}
+.logi{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+	background: #bc4e9c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.link{
+	color: #232323;
+	text-decoration: none;
+	font-family:serif;
+	font-size: 17px;
+}
+
+</style>
+<body>
+	<form action="profile.html" method="get" id="myForm" onsubmit=" return validasi()">
+	<div class="kotak_login">
+		<p class="tulisan_login"><b> login</b></p><br>
+		<form style="font-family: sans-serif;">
+			<label>Username</label>
+			<input type="text" name="username" class="form_login" placeholder="Username atau email ..">
+  		<label>Password</label>
+			<input type="text" name="password" class="form_login" placeholder="Password ..">
+			<a href="" class="ac">Forgot Password</a>
+			<a href="login.html"><h3 class="logi" onclick="alert('Anda berhasil Masuk')">Login</h3></a>
+
+			<center>
+				<a href=""class="link">Daftar</a>
+			</center>
+		</form>
+	</div>
+</body>
+
+</html>
